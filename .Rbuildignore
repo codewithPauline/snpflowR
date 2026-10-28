@@ -1,6 +1,7 @@
 ^\.github$
 ^\.git$
 ^\.gitignore$
+^\.gitattributes$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^validation$

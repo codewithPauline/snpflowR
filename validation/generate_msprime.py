@@ -77,7 +77,7 @@ def main():
                 raise ValueError("No variants: benchmark must record rather than replace this replicate")
             file = args.output / f"{name}_{rep:03d}.csv"
             with file.open("w", newline="") as handle:
-                writer = csv.writer(handle)
+                writer = csv.writer(handle, lineterminator="\n")
                 writer.writerow(["locus", "block", "alt_a", "called_a", "alt_b", "called_b"])
                 writer.writerows(records)
             p = np.array([r[2] / r[3] for r in records])
@@ -89,7 +89,7 @@ def main():
                 reference_gst_ab=g_ab, reference_gst_ba=g_ba))
         print(f"{name}: generated {args.replicates} independent datasets", flush=True)
     with (results / "msprime-manifest.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=manifest[0].keys())
+        writer = csv.DictWriter(handle, fieldnames=manifest[0].keys(), lineterminator="\n")
         writer.writeheader()
         writer.writerows(manifest)
     protocol = dict(msprime=msprime.__version__, tskit=tskit.__version__,
