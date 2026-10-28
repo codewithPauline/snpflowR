@@ -8,6 +8,9 @@ claim of reliable contemporary migration inference.
 
 ## 1. Computational tests
 
+The [software verification record](SOFTWARE_CHECKS.md) links the passing
+five-job GitHub check and retains the full local R package check report.
+
 ![Scenario-specific pilot diagnostics](results/pilot-diagnostics.svg)
 
 `tests/testthat/` checks independent two-allele heterozygosity arithmetic,
