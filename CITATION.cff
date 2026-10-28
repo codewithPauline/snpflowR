@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this development software and Sundqvist et al. (2016); see inst/CITATION."
+type: software
+title: "snpflowR: Directional Genetic Differentiation Signals from Biallelic SNPs"
+authors:
+  - family-names: "Owusu-Ansah"
+    given-names: "Pauline"
+version: 0.0.0.9000
+repository-code: "https://github.com/codewithPauline/snpflowR"
+url: "https://github.com/codewithPauline/snpflowR"
+license: MIT
+abstract: "Research development software for exploratory directional SNP differentiation, paired bootstrap intervals, and reproducible validation. Not a validated estimator of contemporary migration."

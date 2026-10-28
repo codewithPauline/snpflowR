@@ -1,0 +1,9 @@
+Pilot protocol v1; exploratory, not preregistered.
+Replicates per scenario: 100
+300 independent biallelic loci; 100 generations; 999 paired locus resamples.
+95% nominal intervals; default reporting safeguards; no MAF filtering.
+All outcomes, including failures to recover migration, must be reported.
+Wilson intervals describe Monte Carlo uncertainty in supported-call frequency.
+The bootstrap targets genetic contrasts, not known migration parameters.
+This pilot does not measure CI coverage for a population-genetic estimand.
+Run date: 2026-10-28

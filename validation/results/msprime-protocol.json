@@ -1,0 +1,24 @@
+{
+  "msprime": "1.4.4",
+  "tskit": "1.0.3",
+  "numpy": "2.5.4",
+  "python": "3.12.14",
+  "replicates": 50,
+  "blocks": 30,
+  "block_length": 10000,
+  "recombination_rate": 1e-08,
+  "mutation_rate": 1e-08,
+  "effective_sizes": [
+    1000,
+    1000
+  ],
+  "ancestral_size": 1000,
+  "split_generations": 1000,
+  "n_ind": [
+    40,
+    40
+  ],
+  "model": "Hudson coalescent; binary mutation; segregating sites retained",
+  "rate_convention": "forward destination-replacement fraction approximated by backward lineage rate",
+  "limitations": "Limited balanced-sample grid; no validation of demographic identifiability or CI coverage"
+}

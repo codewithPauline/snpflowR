@@ -1,0 +1,5 @@
+"scenario","n","supported","unresolved","correct","wrong","false_direction","max_reference_error"
+"coalescent_null",50,6,44,0,0,6,2.35922392732846e-16
+"coalescent_symmetric",50,4,46,0,0,4,1.76941794549634e-16
+"coalescent_A_to_B",50,27,23,27,0,0,3.33066907387547e-16
+"coalescent_B_to_A",50,22,28,22,0,0,2.08166817117217e-16

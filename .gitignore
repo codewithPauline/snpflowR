@@ -48,3 +48,10 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+# Reproducible validation intermediates; retain scripts and outcome tables.
+validation/generated/
+.venv-validation/
+__pycache__/
+*.tar.gz
+*.Rcheck/
+Rplots.pdf

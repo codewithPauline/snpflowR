@@ -1,0 +1,3 @@
+msprime==1.4.4
+tskit==1.0.3
+numpy==2.5.4

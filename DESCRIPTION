@@ -1,0 +1,24 @@
+Package: snpflowR
+Title: Directional Genetic Differentiation Signals from Biallelic SNPs
+Version: 0.0.0.9000
+Authors@R: person("Pauline", "Owusu-Ansah", email = "paulineowusu653@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: Estimates directional genetic differentiation from biallelic
+    single nucleotide polymorphism (SNP) allele counts using the hypothetical
+    migrant-pool construction of Sundqvist et al. (2016)
+    <doi:10.1002/ece3.2096>. Provides explicit input checks, auditable locus
+    filtering, paired locus or block bootstrap intervals, and reproducible
+    neutral simulations. Outputs are exploratory relative gene-flow signals,
+    not estimates of absolute migration rates or evidence of contemporary
+    migration. Includes diagnostics for unresolved comparisons.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: graphics, stats, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/codewithPauline/snpflowR
+BugReports: https://github.com/codewithPauline/snpflowR/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1

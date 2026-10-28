@@ -1,0 +1,12 @@
+^\.github$
+^\.git$
+^\.gitignore$
+^.*\.Rproj$
+^\.Rproj\.user$
+^validation$
+^CITATION\.cff$
+^CONTRIBUTING\.md$
+^RESEARCH_PLAN\.md$
+^DEVELOPMENT\.md$
+^LICENSE\.md$
+^\.venv-validation$

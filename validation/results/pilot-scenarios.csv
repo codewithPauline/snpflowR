@@ -1,0 +1,10 @@
+"scenario","m_ab","m_ba","n_a","n_b","ne_a","ne_b","missing"
+"no_migration",0,0,40,40,500,500,0
+"symmetric",0.01,0.01,40,40,500,500,0
+"A_to_B",0.02,0,40,40,500,500,0
+"B_to_A",0,0.02,40,40,500,500,0
+"asymmetric_4to1",0.02,0.005,40,40,500,500,0
+"null_unequal_sample",0,0,10,80,500,500,0
+"null_unequal_Ne",0,0,40,40,100,1000,0
+"A_to_B_missing20",0.02,0,40,40,500,500,0.2
+"founder_no_migration",0,0,40,40,500,500,0

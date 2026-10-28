@@ -1,0 +1,16 @@
+citHeader("Please cite both the development software and its underlying method:")
+
+bibentry(bibtype = "Manual",
+  title = "snpflowR: Directional Genetic Differentiation Signals from Biallelic SNPs",
+  author = person("Pauline", "Owusu-Ansah"),
+  year = "2026",
+  note = paste("R package version", meta$Version, "(research development)"),
+  url = "https://github.com/codewithPauline/snpflowR")
+
+bibentry(bibtype = "Article",
+  title = "Directional genetic differentiation and relative migration",
+  author = c(person("Lisa", "Sundqvist"), person("Kevin", "Keenan"),
+    person("Martin", "Zackrisson"), person("Paulo", "Prodohl"),
+    person("David", "Kleinhans")),
+  journal = "Ecology and Evolution", year = "2016", volume = "6",
+  number = "11", pages = "3461--3475", doi = "10.1002/ece3.2096")

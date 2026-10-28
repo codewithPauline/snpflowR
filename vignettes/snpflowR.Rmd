@@ -1,0 +1,165 @@
+---
+title: "Directional SNP signals: method, uncertainty, and interpretation"
+author: "Pauline Owusu-Ansah"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Directional SNP signals: method, uncertainty, and interpretation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(snpflowR)
+```
+
+## Scope
+
+This development package computes exploratory summaries of biallelic allele
+frequencies. It does not identify migration uniquely. Two populations can have
+the same observed frequencies under different histories of drift, founding,
+selection, and migration. Bootstrap stability cannot resolve this identifiability
+problem. A supported genetic contrast therefore is not a supported causal history.
+
+The current implementation is restricted to diploid hard calls or integer allele
+counts with aligned alleles. A pooled read count is not a chromosome count.
+Before analysis, establish the sampling design, quality filters, population
+labels, neutral-locus assumptions, and an appropriate linkage treatment.
+
+## Estimator and orientation
+
+For an eligible locus, let p and q be alternate-allele frequencies in A and B.
+The hypothetical pool has alternate frequency
+
+$$r = \frac{\sqrt{pq}}{\sqrt{pq} + \sqrt{(1-p)(1-q)}}.$$
+
+The pool construction is from Sundqvist et al. (2016), DOI
+[10.1002/ece3.2096](https://doi.org/10.1002/ece3.2096). For A versus the pool,
+the total heterozygosity and between-sample component simplify to
+
+$$H_{T,A} = (p+r)\{1-(p+r)/2\}, \qquad D_A = (p-r)^2/2.$$
+
+Across the same set of usable loci in both directions, the package computes
+
+$$G_{A\to B} = \frac{\sum_l D_{A,l}}{\sum_l H_{T,A,l}},
+\qquad \Delta_{AB} = G_{B\to A} - G_{A\to B}.$$
+
+This is a ratio of sums, not an average of per-SNP ratios. The two populations
+have equal weight in each diversity comparison; their observed chromosome
+counts determine frequencies and eligibility. This plug-in GST is not a
+finite-sample corrected FST estimator. Positive delta indicates greater
+similarity of A to the pool, giving an A-to-B signal under the model.
+
+The descriptive transform `(1 / GST - 1) / 4` reverses the ordering. We expose
+it without treating it as absolute migration. The normalized matrix divides
+finite values by the largest value in the analyzed set, provided no value is
+infinite. Adding populations can change that scale. The contrast and its
+interval are computed before normalization.
+
+## Degenerate loci and pairs
+
+| Situation | Treatment |
+|---|---|
+| Too few called allele copies in either population | Exclude from both directions; count `n_low_calls` |
+| Both populations fixed for the same allele | No information; count `n_shared_fixed` |
+| Populations fixed for opposite alleles | Pool undefined; exclude both directions; count `n_no_shared` |
+| No directional denominator | Return NA and an unresolved reason |
+| Identical polymorphic populations | GST zero; transformed value infinite; direction unresolved |
+| Too few contributing loci/blocks or bootstrap draws | Report estimates, label direction unresolved |
+
+The opposite-fixation exclusion is a deliberate extension choice, different
+from the original paper's proposed maximum-differentiation convention.
+Symmetric pairwise GST retains these loci. Consequently, directional and
+symmetric estimates can summarize different sets; audit the exclusion columns.
+No equivalence with another package is claimed for these edge cases.
+
+## Genotype and count inputs
+
+```{r inputs}
+g <- rbind(c(0, 1, NA), c(1, 2, 0), c(2, 1, 1), c(1, 0, 2))
+colnames(g) <- c("snp1", "snp2", "snp3")
+x <- genotype_counts(g, c("A", "A", "B", "B"))
+x$alt
+x$called
+```
+
+Missing genotypes contribute zero called allele copies. No imputation occurs.
+For a count matrix, supply `snp_counts(alt, called)` with populations in rows,
+loci in columns, and exactly matching names. The alternate allele must refer
+to the same allele in both populations for every column.
+
+```{r vcf}
+file <- system.file("extdata", "tiny.vcf", package = "snpflowR")
+vcf_counts <- read_snp_vcf(file, c(a1 = "A", a2 = "A", b1 = "B", b2 = "B"),
+                           block_size = 100000)
+vcf_counts$import
+```
+
+VCF sample labels align by ID. Phasing is discarded after allele counting.
+Partial missing calls such as `0/.` are treated as missing entire diploid
+genotypes. Unsupported ploidy errors; unsupported variant types are counted
+and skipped. The fixture has too little information for inference. The reader
+does not evaluate per-genotype DP, GQ, PL, or FT, and retains count matrices in
+memory. Filter poor-quality calls before import.
+
+## QC and paired resampling
+
+The default QC filter does not impose a positive minor-allele frequency cutoff:
+rare and private alleles affect this estimator. If a cutoff is justified, report
+it and examine sensitivity. Pooled MAF weights observed chromosomes, so unequal
+sample sizes influence filtering.
+
+```{r qc}
+sim <- simulate_snp_flow(n_loci = 300, seed = 42)
+filtered <- filter_snps(sim$counts, min_called = 10, min_maf = 0)
+head(filtered$qc)
+```
+
+Locus resampling requires an explicit independence assumption. For linked
+data, supply block labels to `snp_counts()` or physical windows to the VCF
+reader. Sample entire blocks with replacement and keep both population
+directions paired. Variable-length blocks retain their original sizes and can
+produce different SNP totals per replicate. Blocks must approximate independent
+sampling units; the software cannot establish this from labels.
+
+```{r estimate}
+fit <- estimate_flow(filtered, n_boot = 999, resample = "locus", seed = 43)
+fit$pairs
+```
+
+Intervals are percentile intervals for delta, using quantile type 7. Default
+Bonferroni tail allocation counts every unordered population pair. It provides
+a nominal multiplicity adjustment, not demonstrated family-wise error control
+for biological migration. With many pairs, increase replicates until at least
+five expected finite draws fall in each adjusted tail; otherwise the reporting
+rule returns `insufficient_tail_resolution`.
+
+The bootstrap conditions on the sampled individuals, input loci, and QC.
+It does not propagate uncertainty about individual recruitment, genotype calls,
+or filter selection. Resampling counts as though they were independent alleles
+would impose additional assumptions and is not done here.
+
+```{r plot, fig.width=6.5, fig.height=3.2}
+plot(fit)
+```
+
+## Reproducibility and interpretation
+
+A supplied seed is local to the function and preserves the caller's random
+stream. Results retain software versions, RNG kind, resampling settings, and
+QC history. Preserve input checksums, the full result with `saveRDS()`, the
+population map, and `sessionInfo()` in your own analysis records.
+
+The initial development pilot shows that sampling imbalance and unequal
+effective sizes can induce supported contrasts without migration. Founder
+history can do the same. This finding prevents a claim that the package
+reliably establishes contemporary gene-flow direction. See the repository's
+validation records and research plan for the exact simulated scenarios and
+remaining work. The built-in simulator is deliberately simple; independent
+coalescent experiments and external review are needed in addition to unit tests.
+
+## Citation
+
+```{r citation}
+citation("snpflowR")
+```

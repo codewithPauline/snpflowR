@@ -1,0 +1,201 @@
+scenario,replicate,ancestry_seed,file,truth,m_ab,m_ba,n_loci,n_blocks,reference_gst_ab,reference_gst_ba
+coalescent_null,1,3000001,validation/generated/coalescent_null_001.csv,null,0,0,111,30,0.14689476489776893,0.1422521463049185
+coalescent_null,2,3000002,validation/generated/coalescent_null_002.csv,null,0,0,110,30,0.12438414445681062,0.1283564298970062
+coalescent_null,3,3000003,validation/generated/coalescent_null_003.csv,null,0,0,100,30,0.11401681541010437,0.14403423923848643
+coalescent_null,4,3000004,validation/generated/coalescent_null_004.csv,null,0,0,119,30,0.1583309820887378,0.2939264601489134
+coalescent_null,5,3000005,validation/generated/coalescent_null_005.csv,null,0,0,117,30,0.18959794491799936,0.11997170140018672
+coalescent_null,6,3000006,validation/generated/coalescent_null_006.csv,null,0,0,105,30,0.1946036573905309,0.10615320307448048
+coalescent_null,7,3000007,validation/generated/coalescent_null_007.csv,null,0,0,98,30,0.12647659467280925,0.07184401177101388
+coalescent_null,8,3000008,validation/generated/coalescent_null_008.csv,null,0,0,108,30,0.1085923279760083,0.11898545892379381
+coalescent_null,9,3000009,validation/generated/coalescent_null_009.csv,null,0,0,105,30,0.16746867516623348,0.21040447279505034
+coalescent_null,10,3000010,validation/generated/coalescent_null_010.csv,null,0,0,100,30,0.14780184558329232,0.12479788748055572
+coalescent_null,11,3000011,validation/generated/coalescent_null_011.csv,null,0,0,103,30,0.09432304664789368,0.08772237839862138
+coalescent_null,12,3000012,validation/generated/coalescent_null_012.csv,null,0,0,92,30,0.23228783144089557,0.13606107665616948
+coalescent_null,13,3000013,validation/generated/coalescent_null_013.csv,null,0,0,109,30,0.10722099346526427,0.1070550891108706
+coalescent_null,14,3000014,validation/generated/coalescent_null_014.csv,null,0,0,108,30,0.10935476126431773,0.11209420502934522
+coalescent_null,15,3000015,validation/generated/coalescent_null_015.csv,null,0,0,115,30,0.17722412851589392,0.13125705917975994
+coalescent_null,16,3000016,validation/generated/coalescent_null_016.csv,null,0,0,90,30,0.09683833296272958,0.1478515473218277
+coalescent_null,17,3000017,validation/generated/coalescent_null_017.csv,null,0,0,121,30,0.13940606710510656,0.10975590960439782
+coalescent_null,18,3000018,validation/generated/coalescent_null_018.csv,null,0,0,113,30,0.10235104832496748,0.121700817140514
+coalescent_null,19,3000019,validation/generated/coalescent_null_019.csv,null,0,0,112,30,0.10835911153712871,0.149945538095297
+coalescent_null,20,3000020,validation/generated/coalescent_null_020.csv,null,0,0,98,30,0.15951341118541218,0.12036770936761444
+coalescent_null,21,3000021,validation/generated/coalescent_null_021.csv,null,0,0,118,30,0.1069594617872703,0.10452337152980885
+coalescent_null,22,3000022,validation/generated/coalescent_null_022.csv,null,0,0,94,30,0.1457356417777098,0.15365345452596357
+coalescent_null,23,3000023,validation/generated/coalescent_null_023.csv,null,0,0,98,30,0.15422715254631186,0.18041688479155008
+coalescent_null,24,3000024,validation/generated/coalescent_null_024.csv,null,0,0,107,30,0.11412078884542945,0.10152775642366235
+coalescent_null,25,3000025,validation/generated/coalescent_null_025.csv,null,0,0,98,30,0.2106453967534596,0.15902854688809365
+coalescent_null,26,3000026,validation/generated/coalescent_null_026.csv,null,0,0,116,30,0.11035818477538738,0.2439285087732706
+coalescent_null,27,3000027,validation/generated/coalescent_null_027.csv,null,0,0,103,30,0.21402024746446846,0.09374329353829593
+coalescent_null,28,3000028,validation/generated/coalescent_null_028.csv,null,0,0,119,30,0.18842814252548826,0.08491212666755521
+coalescent_null,29,3000029,validation/generated/coalescent_null_029.csv,null,0,0,95,30,0.19883757550229897,0.06649736874661333
+coalescent_null,30,3000030,validation/generated/coalescent_null_030.csv,null,0,0,126,30,0.18906610949594096,0.1527131818128475
+coalescent_null,31,3000031,validation/generated/coalescent_null_031.csv,null,0,0,104,30,0.12307335335228464,0.12921828226989554
+coalescent_null,32,3000032,validation/generated/coalescent_null_032.csv,null,0,0,118,30,0.1868426183561688,0.22990248600546004
+coalescent_null,33,3000033,validation/generated/coalescent_null_033.csv,null,0,0,113,30,0.1702843703596217,0.15687061127753096
+coalescent_null,34,3000034,validation/generated/coalescent_null_034.csv,null,0,0,112,30,0.10724985646338027,0.2531310972147513
+coalescent_null,35,3000035,validation/generated/coalescent_null_035.csv,null,0,0,111,30,0.12342577038944812,0.10996914019369207
+coalescent_null,36,3000036,validation/generated/coalescent_null_036.csv,null,0,0,98,30,0.1465633711535824,0.1936149033450079
+coalescent_null,37,3000037,validation/generated/coalescent_null_037.csv,null,0,0,111,30,0.09877352242403674,0.11213889623126373
+coalescent_null,38,3000038,validation/generated/coalescent_null_038.csv,null,0,0,121,30,0.1422305010209641,0.06779998822756043
+coalescent_null,39,3000039,validation/generated/coalescent_null_039.csv,null,0,0,96,30,0.12795342573398227,0.10654897587528828
+coalescent_null,40,3000040,validation/generated/coalescent_null_040.csv,null,0,0,118,30,0.20828803804508164,0.1059402416873434
+coalescent_null,41,3000041,validation/generated/coalescent_null_041.csv,null,0,0,88,30,0.06996596001340681,0.1881119506940453
+coalescent_null,42,3000042,validation/generated/coalescent_null_042.csv,null,0,0,112,30,0.12886468871384563,0.15403145271894592
+coalescent_null,43,3000043,validation/generated/coalescent_null_043.csv,null,0,0,113,30,0.1655077550145598,0.11392043740126648
+coalescent_null,44,3000044,validation/generated/coalescent_null_044.csv,null,0,0,98,30,0.16151217164195844,0.14708997123902467
+coalescent_null,45,3000045,validation/generated/coalescent_null_045.csv,null,0,0,115,30,0.22621425857356475,0.15495387648433903
+coalescent_null,46,3000046,validation/generated/coalescent_null_046.csv,null,0,0,108,30,0.09280838290453713,0.13086207867503047
+coalescent_null,47,3000047,validation/generated/coalescent_null_047.csv,null,0,0,91,30,0.137704617928097,0.21260712058525624
+coalescent_null,48,3000048,validation/generated/coalescent_null_048.csv,null,0,0,133,30,0.10687583232788155,0.15227368614933495
+coalescent_null,49,3000049,validation/generated/coalescent_null_049.csv,null,0,0,96,30,0.11280692353118228,0.07555346208630906
+coalescent_null,50,3000050,validation/generated/coalescent_null_050.csv,null,0,0,109,30,0.18303972435600205,0.1483744979650732
+coalescent_symmetric,1,3100001,validation/generated/coalescent_symmetric_001.csv,null,0.001,0.001,109,30,0.02556109951258579,0.03915490100559598
+coalescent_symmetric,2,3100002,validation/generated/coalescent_symmetric_002.csv,null,0.001,0.001,116,30,0.02107633819644444,0.02784124280844655
+coalescent_symmetric,3,3100003,validation/generated/coalescent_symmetric_003.csv,null,0.001,0.001,111,30,0.019756226266326924,0.031062592714061903
+coalescent_symmetric,4,3100004,validation/generated/coalescent_symmetric_004.csv,null,0.001,0.001,108,30,0.02490597652298969,0.021163703695929396
+coalescent_symmetric,5,3100005,validation/generated/coalescent_symmetric_005.csv,null,0.001,0.001,100,30,0.04773542867180682,0.020902775001564112
+coalescent_symmetric,6,3100006,validation/generated/coalescent_symmetric_006.csv,null,0.001,0.001,110,30,0.013528098660197581,0.03516082790544094
+coalescent_symmetric,7,3100007,validation/generated/coalescent_symmetric_007.csv,null,0.001,0.001,114,30,0.01986671496896551,0.028852064004754478
+coalescent_symmetric,8,3100008,validation/generated/coalescent_symmetric_008.csv,null,0.001,0.001,84,30,0.01818398588878405,0.01833063593318541
+coalescent_symmetric,9,3100009,validation/generated/coalescent_symmetric_009.csv,null,0.001,0.001,98,30,0.019327268491978092,0.012600914736655375
+coalescent_symmetric,10,3100010,validation/generated/coalescent_symmetric_010.csv,null,0.001,0.001,94,30,0.03242150443415523,0.02768113130240603
+coalescent_symmetric,11,3100011,validation/generated/coalescent_symmetric_011.csv,null,0.001,0.001,93,30,0.030306044467915173,0.02827826190437663
+coalescent_symmetric,12,3100012,validation/generated/coalescent_symmetric_012.csv,null,0.001,0.001,101,30,0.028425114814098176,0.026534134487793303
+coalescent_symmetric,13,3100013,validation/generated/coalescent_symmetric_013.csv,null,0.001,0.001,117,30,0.01846432167440448,0.024720810222876175
+coalescent_symmetric,14,3100014,validation/generated/coalescent_symmetric_014.csv,null,0.001,0.001,104,30,0.01918266959996577,0.021142063227397014
+coalescent_symmetric,15,3100015,validation/generated/coalescent_symmetric_015.csv,null,0.001,0.001,82,30,0.017368276889551615,0.01850453380528661
+coalescent_symmetric,16,3100016,validation/generated/coalescent_symmetric_016.csv,null,0.001,0.001,92,30,0.015797136315894057,0.013122029960199942
+coalescent_symmetric,17,3100017,validation/generated/coalescent_symmetric_017.csv,null,0.001,0.001,89,30,0.03140491934707544,0.020630763425211977
+coalescent_symmetric,18,3100018,validation/generated/coalescent_symmetric_018.csv,null,0.001,0.001,100,30,0.022815142369857513,0.02731291103861207
+coalescent_symmetric,19,3100019,validation/generated/coalescent_symmetric_019.csv,null,0.001,0.001,106,30,0.020379132154587434,0.022993822810455408
+coalescent_symmetric,20,3100020,validation/generated/coalescent_symmetric_020.csv,null,0.001,0.001,98,30,0.02880850747150594,0.019394296185888282
+coalescent_symmetric,21,3100021,validation/generated/coalescent_symmetric_021.csv,null,0.001,0.001,130,30,0.02145609460879909,0.021693112216257165
+coalescent_symmetric,22,3100022,validation/generated/coalescent_symmetric_022.csv,null,0.001,0.001,115,30,0.0183746226296788,0.012203208055170089
+coalescent_symmetric,23,3100023,validation/generated/coalescent_symmetric_023.csv,null,0.001,0.001,98,30,0.019038619321117813,0.017850561296367216
+coalescent_symmetric,24,3100024,validation/generated/coalescent_symmetric_024.csv,null,0.001,0.001,93,30,0.012088714909168356,0.01394510627473867
+coalescent_symmetric,25,3100025,validation/generated/coalescent_symmetric_025.csv,null,0.001,0.001,101,30,0.020784351534559105,0.024884970775822125
+coalescent_symmetric,26,3100026,validation/generated/coalescent_symmetric_026.csv,null,0.001,0.001,110,30,0.023339932444218184,0.022192672316328012
+coalescent_symmetric,27,3100027,validation/generated/coalescent_symmetric_027.csv,null,0.001,0.001,112,30,0.02422247945899858,0.026374600214210026
+coalescent_symmetric,28,3100028,validation/generated/coalescent_symmetric_028.csv,null,0.001,0.001,95,30,0.021597915634165164,0.03266402184581553
+coalescent_symmetric,29,3100029,validation/generated/coalescent_symmetric_029.csv,null,0.001,0.001,130,30,0.018090425784198883,0.021595569289998316
+coalescent_symmetric,30,3100030,validation/generated/coalescent_symmetric_030.csv,null,0.001,0.001,115,30,0.025058428794978566,0.0223747904129454
+coalescent_symmetric,31,3100031,validation/generated/coalescent_symmetric_031.csv,null,0.001,0.001,121,30,0.02398491143953822,0.024576200404308936
+coalescent_symmetric,32,3100032,validation/generated/coalescent_symmetric_032.csv,null,0.001,0.001,92,30,0.015911231914816686,0.017886854528496688
+coalescent_symmetric,33,3100033,validation/generated/coalescent_symmetric_033.csv,null,0.001,0.001,120,30,0.034560147491422506,0.027165672449675923
+coalescent_symmetric,34,3100034,validation/generated/coalescent_symmetric_034.csv,null,0.001,0.001,101,30,0.025595344392974888,0.020806947154854653
+coalescent_symmetric,35,3100035,validation/generated/coalescent_symmetric_035.csv,null,0.001,0.001,104,30,0.01823025288042406,0.014919471261544233
+coalescent_symmetric,36,3100036,validation/generated/coalescent_symmetric_036.csv,null,0.001,0.001,105,30,0.024369471802346488,0.025479477489106974
+coalescent_symmetric,37,3100037,validation/generated/coalescent_symmetric_037.csv,null,0.001,0.001,98,30,0.020339830334889297,0.02265283463159744
+coalescent_symmetric,38,3100038,validation/generated/coalescent_symmetric_038.csv,null,0.001,0.001,95,30,0.020397358845528697,0.029483218857429876
+coalescent_symmetric,39,3100039,validation/generated/coalescent_symmetric_039.csv,null,0.001,0.001,98,30,0.018483419576563555,0.03208122880620019
+coalescent_symmetric,40,3100040,validation/generated/coalescent_symmetric_040.csv,null,0.001,0.001,91,30,0.027076056675347477,0.04174168529337513
+coalescent_symmetric,41,3100041,validation/generated/coalescent_symmetric_041.csv,null,0.001,0.001,117,30,0.036759410249130334,0.02631302058040196
+coalescent_symmetric,42,3100042,validation/generated/coalescent_symmetric_042.csv,null,0.001,0.001,108,30,0.019621035654432014,0.013267909607949404
+coalescent_symmetric,43,3100043,validation/generated/coalescent_symmetric_043.csv,null,0.001,0.001,104,30,0.02424408764655434,0.02384181136045063
+coalescent_symmetric,44,3100044,validation/generated/coalescent_symmetric_044.csv,null,0.001,0.001,114,30,0.028148136070719663,0.027803357700517846
+coalescent_symmetric,45,3100045,validation/generated/coalescent_symmetric_045.csv,null,0.001,0.001,111,30,0.025361781746128752,0.036287343872349685
+coalescent_symmetric,46,3100046,validation/generated/coalescent_symmetric_046.csv,null,0.001,0.001,93,30,0.02556101425786292,0.02130002388480595
+coalescent_symmetric,47,3100047,validation/generated/coalescent_symmetric_047.csv,null,0.001,0.001,109,30,0.028682134587030242,0.03064175235863188
+coalescent_symmetric,48,3100048,validation/generated/coalescent_symmetric_048.csv,null,0.001,0.001,89,30,0.016015243287446555,0.01635039065753187
+coalescent_symmetric,49,3100049,validation/generated/coalescent_symmetric_049.csv,null,0.001,0.001,106,30,0.02041246429323168,0.016555596010458303
+coalescent_symmetric,50,3100050,validation/generated/coalescent_symmetric_050.csv,null,0.001,0.001,99,30,0.021798876281073035,0.014420342974741686
+coalescent_A_to_B,1,3200001,validation/generated/coalescent_A_to_B_001.csv,A -> B,0.002,0,107,30,0.026959260583329682,0.05155231172584513
+coalescent_A_to_B,2,3200002,validation/generated/coalescent_A_to_B_002.csv,A -> B,0.002,0,82,30,0.023750658727241403,0.03549469051311861
+coalescent_A_to_B,3,3200003,validation/generated/coalescent_A_to_B_003.csv,A -> B,0.002,0,104,30,0.01651721910283027,0.03724686368072721
+coalescent_A_to_B,4,3200004,validation/generated/coalescent_A_to_B_004.csv,A -> B,0.002,0,123,30,0.017729880676356124,0.028639675806092318
+coalescent_A_to_B,5,3200005,validation/generated/coalescent_A_to_B_005.csv,A -> B,0.002,0,86,30,0.02480659717453235,0.048499144263148324
+coalescent_A_to_B,6,3200006,validation/generated/coalescent_A_to_B_006.csv,A -> B,0.002,0,104,30,0.01225149948377458,0.019908808065998946
+coalescent_A_to_B,7,3200007,validation/generated/coalescent_A_to_B_007.csv,A -> B,0.002,0,100,30,0.006431849595755719,0.04285222932936585
+coalescent_A_to_B,8,3200008,validation/generated/coalescent_A_to_B_008.csv,A -> B,0.002,0,81,30,0.018311743738614866,0.034268864882952776
+coalescent_A_to_B,9,3200009,validation/generated/coalescent_A_to_B_009.csv,A -> B,0.002,0,101,30,0.009954665829102687,0.0246594982348914
+coalescent_A_to_B,10,3200010,validation/generated/coalescent_A_to_B_010.csv,A -> B,0.002,0,111,30,0.021898369035248288,0.034121867431556575
+coalescent_A_to_B,11,3200011,validation/generated/coalescent_A_to_B_011.csv,A -> B,0.002,0,90,30,0.018843590578972485,0.040565125334584916
+coalescent_A_to_B,12,3200012,validation/generated/coalescent_A_to_B_012.csv,A -> B,0.002,0,93,30,0.02433613494397611,0.023721508614953965
+coalescent_A_to_B,13,3200013,validation/generated/coalescent_A_to_B_013.csv,A -> B,0.002,0,93,30,0.025566566777493742,0.01901409546632442
+coalescent_A_to_B,14,3200014,validation/generated/coalescent_A_to_B_014.csv,A -> B,0.002,0,89,30,0.01869175782943606,0.042266396802535446
+coalescent_A_to_B,15,3200015,validation/generated/coalescent_A_to_B_015.csv,A -> B,0.002,0,94,30,0.013440647510860944,0.03530520898840245
+coalescent_A_to_B,16,3200016,validation/generated/coalescent_A_to_B_016.csv,A -> B,0.002,0,112,30,0.017519168884203046,0.02511407889783422
+coalescent_A_to_B,17,3200017,validation/generated/coalescent_A_to_B_017.csv,A -> B,0.002,0,88,30,0.015574222705435991,0.025408996818198252
+coalescent_A_to_B,18,3200018,validation/generated/coalescent_A_to_B_018.csv,A -> B,0.002,0,88,30,0.010753797162032945,0.030464680413524063
+coalescent_A_to_B,19,3200019,validation/generated/coalescent_A_to_B_019.csv,A -> B,0.002,0,99,30,0.017786474450375823,0.02815413248679782
+coalescent_A_to_B,20,3200020,validation/generated/coalescent_A_to_B_020.csv,A -> B,0.002,0,111,30,0.017407613107283913,0.03521195463489661
+coalescent_A_to_B,21,3200021,validation/generated/coalescent_A_to_B_021.csv,A -> B,0.002,0,97,30,0.015498797348577833,0.020246110845155835
+coalescent_A_to_B,22,3200022,validation/generated/coalescent_A_to_B_022.csv,A -> B,0.002,0,92,30,0.01868165798564285,0.028897577100110674
+coalescent_A_to_B,23,3200023,validation/generated/coalescent_A_to_B_023.csv,A -> B,0.002,0,90,30,0.02143678658311031,0.02015223655127695
+coalescent_A_to_B,24,3200024,validation/generated/coalescent_A_to_B_024.csv,A -> B,0.002,0,122,30,0.015123032932716385,0.018977536026675932
+coalescent_A_to_B,25,3200025,validation/generated/coalescent_A_to_B_025.csv,A -> B,0.002,0,94,30,0.01573327563869186,0.03858109330250658
+coalescent_A_to_B,26,3200026,validation/generated/coalescent_A_to_B_026.csv,A -> B,0.002,0,92,30,0.009391528178599005,0.018540451423014182
+coalescent_A_to_B,27,3200027,validation/generated/coalescent_A_to_B_027.csv,A -> B,0.002,0,85,30,0.01576356483185088,0.032342848020301476
+coalescent_A_to_B,28,3200028,validation/generated/coalescent_A_to_B_028.csv,A -> B,0.002,0,108,30,0.0163646811908862,0.03058319159236138
+coalescent_A_to_B,29,3200029,validation/generated/coalescent_A_to_B_029.csv,A -> B,0.002,0,100,30,0.009165356224749772,0.01527307278792332
+coalescent_A_to_B,30,3200030,validation/generated/coalescent_A_to_B_030.csv,A -> B,0.002,0,99,30,0.014610402318942981,0.03576156115421494
+coalescent_A_to_B,31,3200031,validation/generated/coalescent_A_to_B_031.csv,A -> B,0.002,0,136,30,0.016443502536831387,0.017355365441908188
+coalescent_A_to_B,32,3200032,validation/generated/coalescent_A_to_B_032.csv,A -> B,0.002,0,103,30,0.02340583391791357,0.04715067686641031
+coalescent_A_to_B,33,3200033,validation/generated/coalescent_A_to_B_033.csv,A -> B,0.002,0,91,30,0.02214882978504145,0.03985121841040137
+coalescent_A_to_B,34,3200034,validation/generated/coalescent_A_to_B_034.csv,A -> B,0.002,0,95,30,0.021729493050433736,0.029366706809297337
+coalescent_A_to_B,35,3200035,validation/generated/coalescent_A_to_B_035.csv,A -> B,0.002,0,111,30,0.010280557754247657,0.02901576338539071
+coalescent_A_to_B,36,3200036,validation/generated/coalescent_A_to_B_036.csv,A -> B,0.002,0,125,30,0.025568341515950416,0.05366888587857844
+coalescent_A_to_B,37,3200037,validation/generated/coalescent_A_to_B_037.csv,A -> B,0.002,0,107,30,0.02005193371325794,0.025320244908811827
+coalescent_A_to_B,38,3200038,validation/generated/coalescent_A_to_B_038.csv,A -> B,0.002,0,122,30,0.019102809473019188,0.024890840112594306
+coalescent_A_to_B,39,3200039,validation/generated/coalescent_A_to_B_039.csv,A -> B,0.002,0,101,30,0.027882869454921747,0.028611681191439954
+coalescent_A_to_B,40,3200040,validation/generated/coalescent_A_to_B_040.csv,A -> B,0.002,0,110,30,0.011610557931148098,0.02327351616634903
+coalescent_A_to_B,41,3200041,validation/generated/coalescent_A_to_B_041.csv,A -> B,0.002,0,115,30,0.014183779467631226,0.01910568575486726
+coalescent_A_to_B,42,3200042,validation/generated/coalescent_A_to_B_042.csv,A -> B,0.002,0,91,30,0.021446263786308258,0.05465717353417637
+coalescent_A_to_B,43,3200043,validation/generated/coalescent_A_to_B_043.csv,A -> B,0.002,0,88,30,0.010549045364091155,0.02362133303906586
+coalescent_A_to_B,44,3200044,validation/generated/coalescent_A_to_B_044.csv,A -> B,0.002,0,106,30,0.01576967425810302,0.041336396361923884
+coalescent_A_to_B,45,3200045,validation/generated/coalescent_A_to_B_045.csv,A -> B,0.002,0,93,30,0.023411895915642293,0.028183812491918814
+coalescent_A_to_B,46,3200046,validation/generated/coalescent_A_to_B_046.csv,A -> B,0.002,0,90,30,0.019106398944369767,0.02852817524030582
+coalescent_A_to_B,47,3200047,validation/generated/coalescent_A_to_B_047.csv,A -> B,0.002,0,107,30,0.03180486978300951,0.04036065008058446
+coalescent_A_to_B,48,3200048,validation/generated/coalescent_A_to_B_048.csv,A -> B,0.002,0,107,30,0.012443639433000541,0.02186304455192116
+coalescent_A_to_B,49,3200049,validation/generated/coalescent_A_to_B_049.csv,A -> B,0.002,0,103,30,0.02551978366346396,0.028759477024192907
+coalescent_A_to_B,50,3200050,validation/generated/coalescent_A_to_B_050.csv,A -> B,0.002,0,103,30,0.012452060201522834,0.028007888316177527
+coalescent_B_to_A,1,3300001,validation/generated/coalescent_B_to_A_001.csv,B -> A,0,0.002,89,30,0.023825984788921773,0.017306479248372326
+coalescent_B_to_A,2,3300002,validation/generated/coalescent_B_to_A_002.csv,B -> A,0,0.002,101,30,0.029153938798022434,0.021978141118904174
+coalescent_B_to_A,3,3300003,validation/generated/coalescent_B_to_A_003.csv,B -> A,0,0.002,120,30,0.02372144955750116,0.016062233296415547
+coalescent_B_to_A,4,3300004,validation/generated/coalescent_B_to_A_004.csv,B -> A,0,0.002,115,30,0.02322754796478398,0.016646495325756298
+coalescent_B_to_A,5,3300005,validation/generated/coalescent_B_to_A_005.csv,B -> A,0,0.002,112,30,0.028372176779058563,0.024373737609745344
+coalescent_B_to_A,6,3300006,validation/generated/coalescent_B_to_A_006.csv,B -> A,0,0.002,106,30,0.026414188512602476,0.01922601267052154
+coalescent_B_to_A,7,3300007,validation/generated/coalescent_B_to_A_007.csv,B -> A,0,0.002,98,30,0.03979586001087628,0.015931340123842765
+coalescent_B_to_A,8,3300008,validation/generated/coalescent_B_to_A_008.csv,B -> A,0,0.002,104,30,0.016817508269452414,0.015467487918102919
+coalescent_B_to_A,9,3300009,validation/generated/coalescent_B_to_A_009.csv,B -> A,0,0.002,100,30,0.02655858316749516,0.022523898673146966
+coalescent_B_to_A,10,3300010,validation/generated/coalescent_B_to_A_010.csv,B -> A,0,0.002,100,30,0.027468104448447314,0.017835991366755406
+coalescent_B_to_A,11,3300011,validation/generated/coalescent_B_to_A_011.csv,B -> A,0,0.002,101,30,0.04478919539239448,0.01707995840715274
+coalescent_B_to_A,12,3300012,validation/generated/coalescent_B_to_A_012.csv,B -> A,0,0.002,103,30,0.032177205594196116,0.01655680867726089
+coalescent_B_to_A,13,3300013,validation/generated/coalescent_B_to_A_013.csv,B -> A,0,0.002,106,30,0.030986858399561307,0.021379907866873375
+coalescent_B_to_A,14,3300014,validation/generated/coalescent_B_to_A_014.csv,B -> A,0,0.002,96,30,0.03220372687684317,0.010758628831435198
+coalescent_B_to_A,15,3300015,validation/generated/coalescent_B_to_A_015.csv,B -> A,0,0.002,114,30,0.03513992482497008,0.023230238790056087
+coalescent_B_to_A,16,3300016,validation/generated/coalescent_B_to_A_016.csv,B -> A,0,0.002,97,30,0.03753315344981903,0.011321415450162117
+coalescent_B_to_A,17,3300017,validation/generated/coalescent_B_to_A_017.csv,B -> A,0,0.002,98,30,0.02318908431609451,0.021084627950258943
+coalescent_B_to_A,18,3300018,validation/generated/coalescent_B_to_A_018.csv,B -> A,0,0.002,87,30,0.01534170587817052,0.0100060063731316
+coalescent_B_to_A,19,3300019,validation/generated/coalescent_B_to_A_019.csv,B -> A,0,0.002,97,30,0.04668516900206693,0.012624230088208822
+coalescent_B_to_A,20,3300020,validation/generated/coalescent_B_to_A_020.csv,B -> A,0,0.002,121,30,0.02547822793954035,0.02693190180618768
+coalescent_B_to_A,21,3300021,validation/generated/coalescent_B_to_A_021.csv,B -> A,0,0.002,88,30,0.0392004313508061,0.015756865518092984
+coalescent_B_to_A,22,3300022,validation/generated/coalescent_B_to_A_022.csv,B -> A,0,0.002,120,30,0.0439799838340123,0.025659276839705186
+coalescent_B_to_A,23,3300023,validation/generated/coalescent_B_to_A_023.csv,B -> A,0,0.002,107,30,0.016542567390223688,0.017041409692256506
+coalescent_B_to_A,24,3300024,validation/generated/coalescent_B_to_A_024.csv,B -> A,0,0.002,95,30,0.017022475089147008,0.015083263010552184
+coalescent_B_to_A,25,3300025,validation/generated/coalescent_B_to_A_025.csv,B -> A,0,0.002,101,30,0.03400748021779065,0.016454646712162322
+coalescent_B_to_A,26,3300026,validation/generated/coalescent_B_to_A_026.csv,B -> A,0,0.002,116,30,0.04178664102026578,0.021480066244570637
+coalescent_B_to_A,27,3300027,validation/generated/coalescent_B_to_A_027.csv,B -> A,0,0.002,101,30,0.03866388932358596,0.023560122966415388
+coalescent_B_to_A,28,3300028,validation/generated/coalescent_B_to_A_028.csv,B -> A,0,0.002,99,30,0.02545051320671183,0.016141564014021267
+coalescent_B_to_A,29,3300029,validation/generated/coalescent_B_to_A_029.csv,B -> A,0,0.002,115,30,0.0542333420211447,0.03606857130699267
+coalescent_B_to_A,30,3300030,validation/generated/coalescent_B_to_A_030.csv,B -> A,0,0.002,115,30,0.03234857424172033,0.015236613302672628
+coalescent_B_to_A,31,3300031,validation/generated/coalescent_B_to_A_031.csv,B -> A,0,0.002,95,30,0.02125781220108432,0.015873192963565697
+coalescent_B_to_A,32,3300032,validation/generated/coalescent_B_to_A_032.csv,B -> A,0,0.002,98,30,0.023563087980890393,0.014671690635605767
+coalescent_B_to_A,33,3300033,validation/generated/coalescent_B_to_A_033.csv,B -> A,0,0.002,99,30,0.023263099392735225,0.012178978450229347
+coalescent_B_to_A,34,3300034,validation/generated/coalescent_B_to_A_034.csv,B -> A,0,0.002,109,30,0.014441174353858721,0.012376768315927905
+coalescent_B_to_A,35,3300035,validation/generated/coalescent_B_to_A_035.csv,B -> A,0,0.002,108,30,0.014770284285091298,0.01201016648009554
+coalescent_B_to_A,36,3300036,validation/generated/coalescent_B_to_A_036.csv,B -> A,0,0.002,108,30,0.029739034423414766,0.01676707512060361
+coalescent_B_to_A,37,3300037,validation/generated/coalescent_B_to_A_037.csv,B -> A,0,0.002,98,30,0.02771438394241165,0.009781971352636027
+coalescent_B_to_A,38,3300038,validation/generated/coalescent_B_to_A_038.csv,B -> A,0,0.002,89,30,0.03602671713206402,0.015069710207351546
+coalescent_B_to_A,39,3300039,validation/generated/coalescent_B_to_A_039.csv,B -> A,0,0.002,120,30,0.06973943626105657,0.014027392543348744
+coalescent_B_to_A,40,3300040,validation/generated/coalescent_B_to_A_040.csv,B -> A,0,0.002,104,30,0.01888322219848809,0.013563132930576758
+coalescent_B_to_A,41,3300041,validation/generated/coalescent_B_to_A_041.csv,B -> A,0,0.002,93,30,0.02537308440228112,0.012941378567984118
+coalescent_B_to_A,42,3300042,validation/generated/coalescent_B_to_A_042.csv,B -> A,0,0.002,97,30,0.03497687554463736,0.008137554337913654
+coalescent_B_to_A,43,3300043,validation/generated/coalescent_B_to_A_043.csv,B -> A,0,0.002,97,30,0.03212045894848999,0.00993012684160874
+coalescent_B_to_A,44,3300044,validation/generated/coalescent_B_to_A_044.csv,B -> A,0,0.002,87,30,0.03933937212027776,0.015613357700240943
+coalescent_B_to_A,45,3300045,validation/generated/coalescent_B_to_A_045.csv,B -> A,0,0.002,88,30,0.023583852941052762,0.014835946415743937
+coalescent_B_to_A,46,3300046,validation/generated/coalescent_B_to_A_046.csv,B -> A,0,0.002,100,30,0.027571181721085806,0.016339203415998198
+coalescent_B_to_A,47,3300047,validation/generated/coalescent_B_to_A_047.csv,B -> A,0,0.002,118,30,0.036494391233489534,0.022106948935041698
+coalescent_B_to_A,48,3300048,validation/generated/coalescent_B_to_A_048.csv,B -> A,0,0.002,106,30,0.014243413163268962,0.010044906378721736
+coalescent_B_to_A,49,3300049,validation/generated/coalescent_B_to_A_049.csv,B -> A,0,0.002,109,30,0.022023645786547832,0.010339691311550787
+coalescent_B_to_A,50,3300050,validation/generated/coalescent_B_to_A_050.csv,B -> A,0,0.002,112,30,0.049829486937616525,0.024035043551491497
