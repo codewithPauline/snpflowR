@@ -1,0 +1,536 @@
+{
+  "tested_commit": "32426ed9ce00edd1a2639dfbe6aedf3426fc26f7",
+  "workflows": [
+    {
+      "id": 41084562102,
+      "name": "Comparator-audit",
+      "head_sha": "32426ed9ce00edd1a2639dfbe6aedf3426fc26f7",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562102"
+    },
+    {
+      "id": 41084562296,
+      "name": "Uncertainty-engine",
+      "head_sha": "32426ed9ce00edd1a2639dfbe6aedf3426fc26f7",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562296"
+    },
+    {
+      "id": 41084562344,
+      "name": "R-CMD-check",
+      "head_sha": "32426ed9ce00edd1a2639dfbe6aedf3426fc26f7",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562344"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 124162187503,
+      "name": "research-engine",
+      "run_id": 41084562296,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562296/job/124162187503",
+      "log_excerpts": [
+        "2026-10-30T15:53:54.8610784Z Test passed with 24 successes 🎊.",
+        "2026-10-30T15:53:55.1141624Z Test passed with 34 successes 😀.",
+        "2026-10-30T15:53:55.1595660Z Test passed with 6 successes 😸.",
+        "2026-10-30T15:53:55.2330818Z Test passed with 3 successes 🥇.",
+        "2026-10-30T15:53:55.2340926Z Research-engine checks passed; evaluation seeds were not used.",
+        "2026-10-30T15:54:00.7869149Z Verified 17 complete scenarios and 34 datasets (smoke)."
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run R CMD INSTALL .",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Verify weighted resampling against literal duplication",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Smoke check every scenario using development seeds",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        }
+      ]
+    },
+    {
+      "id": 124162187322,
+      "name": "numeric-audit",
+      "run_id": 41084562102,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562102/job/124162187322",
+      "log_excerpts": [
+        "2026-10-30T15:52:32.0446801Z Verified 8 upstream source blobs.",
+        "2026-10-30T15:52:50.2749479Z PASS: ordinary-domain agreement; boundary differences recorded separately.",
+        "2026-10-30T15:52:50.2739020Z   software fixtures directed_entries gst_disagreements relative_disagreements",
+        "2026-10-30T15:52:50.2739742Z   corridoR      110              648                 1                      9",
+        "2026-10-30T15:52:50.2740225Z  diveRsity      110              648                 0                      4",
+        "2026-10-30T15:52:50.2740585Z   snpflowR      110              648                 0                      0",
+        "2026-10-30T15:52:50.2740959Z  max_finite_gst_abs_difference max_finite_relative_abs_difference",
+        "2026-10-30T15:52:50.2741323Z                   2.732857e-16                       7.716050e-15"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Install snpflowR",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Verify pinned sources and run point-estimator comparison",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Retain comparison results",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        }
+      ]
+    },
+    {
+      "id": 124162190093,
+      "name": "ubuntu-latest (R devel)",
+      "run_id": 41084562344,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562344/job/124162190093",
+      "log_excerpts": [
+        "2026-10-30T15:52:59.9752703Z Status: OK",
+        "2026-10-30T15:53:00.0879282Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-pandoc@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run r-lib/actions/check-r-package@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": 124162191560,
+      "name": "macos-latest (R release)",
+      "run_id": 41084562344,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562344/job/124162191560",
+      "log_excerpts": [
+        "2026-10-30T15:54:02.8859910Z Status: OK",
+        "2026-10-30T15:54:03.2505290Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-pandoc@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run r-lib/actions/check-r-package@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": 124162191564,
+      "name": "ubuntu-latest (R release)",
+      "run_id": 41084562344,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562344/job/124162191564",
+      "log_excerpts": [
+        "2026-10-30T15:53:06.8422355Z Status: OK",
+        "2026-10-30T15:53:06.9281001Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-pandoc@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run r-lib/actions/check-r-package@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": 124162191566,
+      "name": "ubuntu-latest (R oldrel-1)",
+      "run_id": 41084562344,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562344/job/124162191566",
+      "log_excerpts": [
+        "2026-10-30T15:52:53.6258599Z Status: OK",
+        "2026-10-30T15:52:53.6876064Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-pandoc@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run r-lib/actions/check-r-package@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": 124162191857,
+      "name": "windows-latest (R release)",
+      "run_id": 41084562344,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/codewithPauline/snpflowR/actions/runs/41084562344/job/124162191857",
+      "log_excerpts": [
+        "2026-10-30T15:53:25.0158516Z Status: OK",
+        "2026-10-30T15:53:25.6221277Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+      ],
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run r-lib/actions/setup-pandoc@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run r-lib/actions/setup-r@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run r-lib/actions/check-r-package@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run r-lib/actions/setup-r-dependencies@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    }
+  ],
+  "scope": "Software checks only; the prospective scientific calibration screen failed for all four methods."
+}

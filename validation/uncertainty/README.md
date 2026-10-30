@@ -130,6 +130,12 @@ A separate Python checker revalidated all **60,500** archived method outcomes,
 their seed schedules, coverage indicators, directional labels, and the Wilson
 summary limits. [Verification record](results/summary-verification.json).
 
+All seven GitHub software jobs passed for result revision `32426ed`, including
+five platform checks, the pinned comparator audit, and the new research-engine
+smoke workflow. The local package check had zero errors or warnings and one
+development-version note. [Software verification record](../SOFTWARE_CHECKS.md).
+These software passes do not change the failed scientific calibration screen.
+
 All 17 raw CSVs are preserved in [replicates.zip](results/replicates.zip), with
 [SHA-256 checksums and row counts](results/replicate-archive-manifest.json).
 The archive preserves the original CSV bytes. It is compact storage, not a

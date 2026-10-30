@@ -1,6 +1,59 @@
 # Software verification record
 
-## Latest milestone: pinned comparator audit
+## Latest milestone: prospective sampling uncertainty
+
+Completed 2026-10-30 (America/New_York). Research version: `0.0.0.9000`.
+Tested source and workflow revision:
+`32426ed9ce00edd1a2639dfbe6aedf3426fc26f7`.
+
+**All seven GitHub jobs passed.** The five package-check jobs each reported
+`Status: OK` and **146 passing assertions**, with no test failures, warnings,
+or skips. The comparator audit passed with its previously documented boundary
+differences. The new research-engine job passed **67 assertions** and all
+17 smoke scenarios (34 datasets) using development seeds.
+
+| Check | Result | Evidence |
+|---|---|---|
+| Linux, R release/devel/oldrel-1 | Three jobs passed | Package-check workflow below |
+| Windows, R release | Passed | Package-check workflow below |
+| macOS, R release | Passed | Package-check workflow below |
+| Pinned comparator audit, Linux | Passed | Comparator workflow below |
+| Research engine and smoke scenarios, Linux | Passed | Uncertainty-engine workflow below |
+
+- [Package-check run 41084562344](https://github.com/codewithPauline/snpflowR/actions/runs/41084562344)
+- [Comparator run 41084562102](https://github.com/codewithPauline/snpflowR/actions/runs/41084562102)
+- [Uncertainty-engine run 41084562296](https://github.com/codewithPauline/snpflowR/actions/runs/41084562296)
+- [Retained job conclusions, steps, and log excerpts](uncertainty/results/github-checks.json)
+
+A fresh local R 4.3.3 `--as-cran` check completed with **0 errors, 0 warnings,
+and 1 note** about the development version's `9000` component. All 146 package
+assertions, examples, rebuilt vignettes, and PDF/HTML manual checks passed.
+The [full check log](uncertainty/results/R-CMD-check-R4.3.3.log),
+[package test log](uncertainty/results/package-tests-R4.3.3.log), and
+[research-engine log](uncertainty/results/engine-check-R4.3.3.log) are retained.
+
+```sh
+# From the repository directory:
+R CMD build .
+mkdir -p ../uncertainty-final-check
+_R_CHECK_SYSTEM_CLOCK_=FALSE R_RD4PDF='times,hyper' \
+  R CMD check --as-cran --output=../uncertainty-final-check snpflowR_0.0.0.9000.tar.gz
+```
+
+Only the local clock-network probe was disabled; incoming checks remained
+enabled, and the manual used installed Times fonts. GitHub package jobs use
+the action's standard incoming/clock settings and omit the PDF manual.
+
+The [full prospective study](uncertainty/README.md) was run separately from CI:
+15,125 datasets, 60,500 method outcomes, and no execution failures. Literal R
+duplication reproduced 15,984 bootstrap draws to numerical precision; a separate
+Python checker verified all archived outcomes and summary limits. All four
+methods nevertheless **failed the prespecified overall calibration screen**.
+Passing software checks does not negate that scientific result. Public fit
+provenance and printed output now state that calibration is not established;
+numerical estimates and reporting thresholds are unchanged.
+
+## Pinned comparator audit (historical record)
 
 Completed 2026-10-29 (America/New_York). Research version: `0.0.0.9000`.
 Tested source and workflow revision:
