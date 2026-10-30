@@ -82,6 +82,10 @@ block lengths therefore give variable numbers of SNPs per replicate.
 Intervals use percentile quantiles (R type 7). QC and sampled individuals are
 fixed; individual sampling uncertainty and demographic confounding are not
 resolved by this bootstrap. No p-values or posterior probabilities are returned.
+A prospective sampling study found substantial interval miscalibration under
+unequal sample sizes and other tested conditions. These are nominal intervals,
+not calibrated confidence guarantees for the genetic contrast. The returned
+provenance explicitly records \code{calibration_status = "not_established"}.
 }
 \examples{
 x <- simulate_snp_flow(n_loci = 100, seed = 12)$counts

@@ -1,0 +1,10 @@
+{
+  "protocol": "sampling-uncertainty-v1",
+  "mode": "evaluation",
+  "scenarios": 17,
+  "datasets": 15125,
+  "method_results": 60500,
+  "complete": true,
+  "execution_failures": 0,
+  "note": "Screening is scenario-specific; no public API or default is automatically promoted."
+}

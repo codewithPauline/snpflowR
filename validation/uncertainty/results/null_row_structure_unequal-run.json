@@ -1,0 +1,8 @@
+{
+  "scenario": "null_row_structure_unequal",
+  "replicates": 1000,
+  "method_rows": 4000,
+  "elapsed_seconds": 16.554,
+  "mode": "evaluation",
+  "status": "complete"
+}

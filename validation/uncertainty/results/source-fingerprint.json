@@ -1,0 +1,7 @@
+{
+  "validation/uncertainty/protocol-v1.json": "95c5a78fab7820dbfefc90a68fccdf3e",
+  "validation/uncertainty/PROTOCOL.md": "518f452466baaf0dd1a1d0dcf259ba76",
+  "validation/uncertainty/bootstrap.cpp": "eb99458aa0a7117b86c45a4f3682ad0d",
+  "validation/uncertainty/helpers.R": "8546c5d4bcdc55d3435df2a47cce602a",
+  "validation/uncertainty/run_study.R": "1238954cca2bfd0a9647854395c1c0e7"
+}

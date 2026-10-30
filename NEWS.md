@@ -12,3 +12,8 @@ Initial research development version. No stable release or CRAN submission.
   fixtures; preserve normalization differences and numerical boundary failures.
 * Add offline comparator reference tests and boundary regression tests, plus a
   separate workflow for the checksum-verified external source comparison.
+* Complete a prospective 15,125-dataset sampling-uncertainty study. Preserve
+  interval-calibration failures, full outcomes, and independent arithmetic checks.
+* Mark calibration as not established in fit provenance and printed output.
+  Numerical estimates and reporting thresholds are unchanged; individual and
+  crossed bootstrap candidates remain research-only implementations.

@@ -41,6 +41,13 @@ from package dependencies and ordinary checks; the runtime package stays offline
 Do not refresh reference-output fixtures or widen tolerances merely to make a
 failing comparison pass. Investigate and document the discrepancy first.
 
+The [sampling study](validation/uncertainty/README.md) has a frozen protocol,
+research-only C++ acceleration, literal R replay checks, and separate Python
+checks of archived summaries. Its alternative resampling methods are not public
+package APIs. CI verifies arithmetic and small development-seed runs; it does not
+treat favorable simulation performance as a software pass condition. Calibration
+failures are research results that must remain visible.
+
 The prototype was developed with AI assistance. The human maintainer remains
 responsible for checking authorship, methods, scientific claims, and compliance
 with any journal's AI disclosure policy. No independent expert review is claimed.

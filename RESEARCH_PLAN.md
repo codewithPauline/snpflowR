@@ -59,6 +59,18 @@ separate study; no claim of full-package equivalence is made.
 
 ### 3. Calibration and robustness study
 
+Completed first prospective sampling evaluation: [17 scenarios, 15,125 datasets](validation/uncertainty/README.md),
+with a public protocol frozen before evaluation. None of the locus, block,
+individual, or crossed procedures met the overall screen. The study measures
+coverage for known genetic contrasts; it does not calibrate demographic claims.
+Unequal sampling exposes strong finite-sample bias, while resampling units affect
+linkage and individual-dependency uncertainty. These failures block promotion of
+the research prototypes or a general calibration claim.
+
+The next development cycle must investigate bias correction and balanced-sampling
+strategies, with separate attention to zero-differentiation boundaries. Any method
+selected using these outcomes needs a new protocol and fresh evaluation seeds.
+
 Freeze a versioned protocol before the confirmatory study. Exploratory pilot
 results must remain labeled exploratory. Use a development grid for design and
 distinct, unreused simulation seeds for evaluation. No selection of favorable
@@ -127,10 +139,10 @@ review, or award. CRAN distribution and journal review are separate processes.
 | Packaging | Current R release/devel checks, Windows/macOS/Linux results, docs and examples |
 | Submission | Name/Archive/Bioconductor checks, maintainer details, license audit, CRAN policies rechecked |
 
-The initial implementation, pilots, and pinned point-estimator comparison address
-parts of the first three gates and explore later ones. Uncertainty calibration,
-empirical demonstration, and independent review remain open. They do not satisfy
-the full release criteria.
+The implementation, pilots, comparator audit, and prospective sampling study
+provide evidence for the release gates. The sampling study found calibration
+failures rather than establishing a calibrated method. Empirical demonstration
+and independent review also remain open. The full release criteria are unmet.
 
 ## Primary references and policy sources
 

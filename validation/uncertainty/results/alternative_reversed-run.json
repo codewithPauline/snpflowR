@@ -1,0 +1,8 @@
+{
+  "scenario": "alternative_reversed",
+  "replicates": 625,
+  "method_rows": 2500,
+  "elapsed_seconds": 10.893,
+  "mode": "evaluation",
+  "status": "complete"
+}

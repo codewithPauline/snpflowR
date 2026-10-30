@@ -1,0 +1,8 @@
+{
+  "scenario": "alternative_linked",
+  "replicates": 625,
+  "method_rows": 2500,
+  "elapsed_seconds": 12.285,
+  "mode": "evaluation",
+  "status": "complete"
+}

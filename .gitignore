@@ -55,3 +55,7 @@ __pycache__/
 *.tar.gz
 *.Rcheck/
 Rplots.pdf
+# Exact raw study CSVs are retained in the verified replicates.zip archive.
+validation/uncertainty/results/null_*.csv
+validation/uncertainty/results/alternative_*.csv
+validation/uncertainty/results/*.tmp

@@ -1,0 +1,8 @@
+{
+  "method_rows_checked": 60500,
+  "unique_scenarios": 17,
+  "seed_and_interval_checks": "passed",
+  "summary_counts": "passed",
+  "maximum_wilson_difference": 4.440892098500626e-16,
+  "scope": "separate Python arithmetic check, not external scientific review"
+}

@@ -1,0 +1,67 @@
+{
+  "protocol_commit": "7e8fd2f660d595b5edd34813a04909c9d57ff3db",
+  "commit_date": "2026-10-30T11:28:45-04:00",
+  "launch_recorded_utc": "2026-10-30T15:32:45.860226+00:00",
+  "batches": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      6,
+      7,
+      8
+    ],
+    [
+      9,
+      10,
+      11,
+      12
+    ],
+    [
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  ],
+  "source_files": [
+    {
+      "path": "validation/uncertainty/PROTOCOL.md",
+      "sha256": "d01a7a0a21574658ec778835cf27704289c4beeb8f132780c8dabd2542768c81"
+    },
+    {
+      "path": "validation/uncertainty/protocol-v1.json",
+      "sha256": "f7a57536282cec29a7c7ea754c7f8ed76f997f05e1ca561a0632c20ee218169e"
+    },
+    {
+      "path": "validation/uncertainty/bootstrap.cpp",
+      "sha256": "36417a7a1f3ae6ca4722ba14661d112fadbe9196a3c5a5d3378a7a6681d23521"
+    },
+    {
+      "path": "validation/uncertainty/helpers.R",
+      "sha256": "4fa36aadb343ddad9aad2146e874ffe45835ebff6ee291d45165e9acacc663be"
+    },
+    {
+      "path": "validation/uncertainty/run_study.R",
+      "sha256": "5ba987e3e0bac92089d84e72cc9a7ea5ff79bed64bd3793edc1c2a95e52d1603"
+    },
+    {
+      "path": "validation/uncertainty/summarise.R",
+      "sha256": "b6790ec1b6caf0dbe10f6b5d850213c9a0edafb2bbe60684a86c4f9768e82c9b"
+    },
+    {
+      "path": "validation/uncertainty/run_batch.py",
+      "sha256": "dba56ea28b7a8c990f9b4c59fe227a621e3b7a8721f576d161de96bf01342904"
+    },
+    {
+      "path": "validation/uncertainty/check_engine.R",
+      "sha256": "93c51dfa49d28abdfae751505fe095293038556beaf867821c8a2384c4e59bdf"
+    }
+  ],
+  "status": "evaluation launched after protocol commit; completion is recorded separately"
+}

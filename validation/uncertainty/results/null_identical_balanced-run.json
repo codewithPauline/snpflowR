@@ -1,0 +1,8 @@
+{
+  "scenario": "null_identical_balanced",
+  "replicates": 1000,
+  "method_rows": 4000,
+  "elapsed_seconds": 18.732,
+  "mode": "evaluation",
+  "status": "complete"
+}

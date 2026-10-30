@@ -1,0 +1,8 @@
+{
+  "scenario": "null_random_balanced",
+  "replicates": 1000,
+  "method_rows": 4000,
+  "elapsed_seconds": 18.102,
+  "mode": "evaluation",
+  "status": "complete"
+}

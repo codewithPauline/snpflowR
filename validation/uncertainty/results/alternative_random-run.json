@@ -1,0 +1,8 @@
+{
+  "scenario": "alternative_random",
+  "replicates": 625,
+  "method_rows": 2500,
+  "elapsed_seconds": 11.205,
+  "mode": "evaluation",
+  "status": "complete"
+}

@@ -1,0 +1,5 @@
+"method","coverage_scenarios_passed","coverage_scenarios","null_scenarios_passed","null_scenarios","meets_all_screens"
+"locus",0,17,0,12,FALSE
+"block",0,17,0,12,FALSE
+"individual",0,17,5,12,FALSE
+"crossed",0,17,6,12,FALSE

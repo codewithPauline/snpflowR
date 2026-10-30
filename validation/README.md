@@ -116,6 +116,18 @@ and numerical boundary behavior. All outputs and warnings are retained.
 These fixtures are not extra demographic simulations. Point-estimate agreement
 does not establish equivalence of bootstrap procedures or biological validity.
 
+## 5. Prospective sampling uncertainty
+
+The [sampling-uncertainty report](uncertainty/README.md) covers 15,125 datasets
+and 60,500 method outcomes, with known genetic targets, 999 bootstrap draws,
+and a protocol committed before the evaluation seeds ran. All four methods
+failed the overall calibration screen; no new method or threshold is promoted.
+Locus/block uncertainty, individual uncertainty, and their crossed combination
+are separated. All raw outcomes are preserved in a checksum-verified archive.
+
+This adds evidence about statistical miscalibration to the earlier evidence
+about demographic confounding. Successful numerical checks do not remove either.
+
 ## Files and reproducibility
 
 `results/` contains all 1,100 replicate outcomes, summaries, seeds, scenario

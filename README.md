@@ -4,6 +4,7 @@
 
 [![R-CMD-check](https://github.com/codewithPauline/snpflowR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/codewithPauline/snpflowR/actions/workflows/R-CMD-check.yaml)
 [![Comparator-audit](https://github.com/codewithPauline/snpflowR/actions/workflows/comparator-audit.yaml/badge.svg)](https://github.com/codewithPauline/snpflowR/actions/workflows/comparator-audit.yaml)
+[![Uncertainty-engine](https://github.com/codewithPauline/snpflowR/actions/workflows/uncertainty-engine.yaml/badge.svg)](https://github.com/codewithPauline/snpflowR/actions/workflows/uncertainty-engine.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 
 **Status: research development (`0.0.0.9000`). Not a CRAN release or a validated
@@ -25,7 +26,7 @@ assessment of when its directional signals can and cannot be trusted.
 | Input | Population allele counts; diploid hard-call matrices; a restricted local SNP VCF reader |
 | Differentiation | Directional and symmetric plug-in multilocus GST |
 | Relative signal | Descriptive migration transform, with singularities exposed |
-| Uncertainty | Paired locus or whole-block percentile bootstrap of the GST contrast |
+| Uncertainty | Paired locus/block percentile intervals; nominal, with calibration not established |
 | Reporting | Explicit `unresolved` labels, exclusion counts, interval diagnostics, provenance |
 | QC | Minimum allele counts, optional pooled MAF filter, auditable retention decisions |
 | Validation | Independent arithmetic, pinned comparator sources, invariance and parser tests, seeded simulations |
@@ -104,6 +105,8 @@ missing calls; missing genotypes are never made into reference homozygotes.
 - `bootstrap_supported_signal` means a bootstrap-supported genetic contrast,
   not a validated demographic conclusion, calibrated p-value, or probability
   that migration occurred.
+- `provenance$calibration_status = "not_established"` records that nominal
+  intervals have not demonstrated reliable coverage for the genetic contrast.
 - Scaling is relative to the analyzed population set. Zero differentiation
   produces an infinite transform; no epsilon is inserted. Relative scaling
   is unavailable in that case.
@@ -136,12 +139,25 @@ computation, not biological reliability. divMigrate's individual bootstrap and
 snpflowR's locus/block contrast bootstrap are different procedures; their
 support labels are not interchangeable.
 
+**The prospective sampling study is complete: 15,125 datasets across 17
+scenarios. None of the four resampling methods met the prespecified overall
+calibration screen.** In a fixed-panel null with samples of 10:80 individuals,
+the block method reported false genetic-direction support in 83.2% of datasets.
+For balanced samples with four identical SNP copies per block, false support
+was 33.5% under locus resampling and 6.1% under block resampling. These are
+scenario-specific results; changing resampling alone did not resolve bias.
+All outcomes, Monte Carlo intervals, and literal-reference checks are preserved
+in the [sampling-uncertainty report](validation/uncertainty/README.md).
+The individual and crossed alternatives remain research prototypes; the
+package's numerical estimator and thresholds have not been changed.
+
 ## Scientific and software development
 
 - [Methods and worked examples](vignettes/snpflowR.Rmd)
 - [Research questions, benchmark design, and release gates](RESEARCH_PLAN.md)
 - [Validation scripts, results, and limitations](validation/README.md)
 - [Pinned comparator results and boundary cases](validation/COMPARATOR_AUDIT.md)
+- [Prospective sampling-uncertainty study and calibration failures](validation/uncertainty/README.md)
 - [Developer instructions](DEVELOPMENT.md)
 - [Contributing](CONTRIBUTING.md)
 - [Report a bug](https://github.com/codewithPauline/snpflowR/issues)

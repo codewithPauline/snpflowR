@@ -1,0 +1,8 @@
+{
+  "scenario": "null_missing_unequal",
+  "replicates": 1000,
+  "method_rows": 4000,
+  "elapsed_seconds": 45.421,
+  "mode": "evaluation",
+  "status": "complete"
+}

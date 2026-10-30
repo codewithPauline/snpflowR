@@ -1,0 +1,21 @@
+{
+  "command": [
+    "Rscript",
+    "validation/uncertainty/run_study.R",
+    "evaluation",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "mode": "evaluation",
+  "exit_code": 0,
+  "wall_seconds": 79.77333827299998,
+  "child_user_seconds": 77.818328,
+  "child_system_seconds": 1.877751,
+  "child_peak_rss": 408264,
+  "rss_units": "KiB",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "peak_scope": "maximum child-process RSS, not aggregate across concurrent processes"
+}

@@ -49,6 +49,10 @@
 #' Intervals use percentile quantiles (R type 7). QC and sampled individuals are
 #' fixed; individual sampling uncertainty and demographic confounding are not
 #' resolved by this bootstrap. No p-values or posterior probabilities are returned.
+#' A prospective sampling study found substantial interval miscalibration under
+#' unequal sample sizes and other tested conditions. These are nominal intervals,
+#' not calibrated confidence guarantees for the genetic contrast. The returned
+#' provenance explicitly records `calibration_status = "not_established"`.
 #' @references
 #' Sundqvist L, Keenan K, Zackrisson M, Prodohl P, Kleinhans D (2016).
 #' Directional genetic differentiation and relative migration.
@@ -189,7 +193,8 @@ estimate_flow <- function(x, n_boot = 0L, resample = c("block", "locus"),
       r_version = R.version.string, rng_kind = RNGkind(),
       input_loci = n_loc, population_order = pop, qc_history = x$history,
       method = "Sundqvist migrant pool; plug-in multilocus GST; no-shared loci excluded",
-      interpretation = "Exploratory genetic signal; not a causal migration estimate")),
+      interpretation = "Exploratory genetic signal; not a causal migration estimate",
+      calibration_status = "not_established")),
     class = "snpflow_fit")
 }
 
@@ -231,6 +236,7 @@ print.snpflow_fit <- function(x, ...) {
   cat("Rows are putative sources; columns are destinations.\n")
   print(x$pairs[, c("population_a", "population_b", "delta_gst", "lower", "upper", "direction", "reason")], row.names = FALSE)
   cat("Signals do not establish contemporary migration or absolute rates.\n")
+  cat("Intervals are nominal; calibration is not established.\n")
   invisible(x)
 }
 
