@@ -33,6 +33,14 @@ intermediate counts are git-ignored; seeds, scripts, protocols, and every
 replicate's outcome are retained. Do not replace negative results with a
 handpicked successful example.
 
+The optional [comparator audit](validation/COMPARATOR_AUDIT.md) executes pinned,
+unmodified estimator sources after checksum verification. Install Rcpp and a C++
+toolchain, then run `Rscript validation/run_comparator_audit.R` from the root.
+Python 3 downloads and verifies the small external source cache. This is separate
+from package dependencies and ordinary checks; the runtime package stays offline.
+Do not refresh reference-output fixtures or widen tolerances merely to make a
+failing comparison pass. Investigate and document the discrepancy first.
+
 The prototype was developed with AI assistance. The human maintainer remains
 responsible for checking authorship, methods, scientific claims, and compliance
 with any journal's AI disclosure policy. No independent expert review is claimed.

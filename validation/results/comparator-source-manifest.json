@@ -1,0 +1,74 @@
+[
+  {
+    "software": "corridoR",
+    "repository": "paulmaier/corridoR",
+    "commit": "9e2e0cb3aa4e8947ce4a0827703dc3bc5d333d43",
+    "path": "DESCRIPTION",
+    "git_blob_sha": "f5cea3dcf233875ef0cc948aeff042780534ece4",
+    "url": "https://raw.githubusercontent.com/paulmaier/corridoR/9e2e0cb3aa4e8947ce4a0827703dc3bc5d333d43/DESCRIPTION",
+    "sha256": "f34c8f41802cf8e3ee1330c06c90e864888ad17f710e2e48ae4664a4d1a3e6d6"
+  },
+  {
+    "software": "corridoR",
+    "repository": "paulmaier/corridoR",
+    "commit": "9e2e0cb3aa4e8947ce4a0827703dc3bc5d333d43",
+    "path": "R/genetic_stats.R",
+    "git_blob_sha": "9926413944a55511475fb28428961acd7a5a6048",
+    "url": "https://raw.githubusercontent.com/paulmaier/corridoR/9e2e0cb3aa4e8947ce4a0827703dc3bc5d333d43/R/genetic_stats.R",
+    "sha256": "c5c3f6f6ede4d8387f0cd7b9303cf10a39bbb117c7696b83de926d9d1378573b"
+  },
+  {
+    "software": "corridoR",
+    "repository": "paulmaier/corridoR",
+    "commit": "9e2e0cb3aa4e8947ce4a0827703dc3bc5d333d43",
+    "path": "R/popcounts.R",
+    "git_blob_sha": "236799670e78bccbbbebd0d7058d8f1e5a5eab07",
+    "url": "https://raw.githubusercontent.com/paulmaier/corridoR/9e2e0cb3aa4e8947ce4a0827703dc3bc5d333d43/R/popcounts.R",
+    "sha256": "761536d17acc2f757b180a6be8cb41e1bb4189b92bd13a372dc62a6be3a8f912"
+  },
+  {
+    "software": "diveRsity",
+    "repository": "kkeenan02/diveRsity",
+    "commit": "22943bc95c80f46418578e7de205d4841976d140",
+    "path": "DESCRIPTION",
+    "git_blob_sha": "8067444df3e56c9c699ad1d6694b2b70d8f91395",
+    "url": "https://raw.githubusercontent.com/kkeenan02/diveRsity/22943bc95c80f46418578e7de205d4841976d140/DESCRIPTION",
+    "sha256": "293816752b3163c2f3a894ab3b09999e501085465a4da441e4a32e5813f39bb0"
+  },
+  {
+    "software": "diveRsity",
+    "repository": "kkeenan02/diveRsity",
+    "commit": "22943bc95c80f46418578e7de205d4841976d140",
+    "path": "R/divMigrate.R",
+    "git_blob_sha": "4c0b6b0aa57c77c1b7f09e2a03be3500831caccb",
+    "url": "https://raw.githubusercontent.com/kkeenan02/diveRsity/22943bc95c80f46418578e7de205d4841976d140/R/divMigrate.R",
+    "sha256": "2ff5c7374cc2ce11b4f1ee8b454ffa3dcc5b5b600ac689a52229c20e7d8b93e9"
+  },
+  {
+    "software": "diveRsity",
+    "repository": "kkeenan02/diveRsity",
+    "commit": "22943bc95c80f46418578e7de205d4841976d140",
+    "path": "R/rgp.R",
+    "git_blob_sha": "1e176cb6da795683ac933ae50f04b19df8aefb5b",
+    "url": "https://raw.githubusercontent.com/kkeenan02/diveRsity/22943bc95c80f46418578e7de205d4841976d140/R/rgp.R",
+    "sha256": "d0fa3370954e0d6863a12d1a6d5c409a4d0a57232eeb60af6270141425e6b952"
+  },
+  {
+    "software": "diveRsity",
+    "repository": "kkeenan02/diveRsity",
+    "commit": "22943bc95c80f46418578e7de205d4841976d140",
+    "path": "src/pwHt.cpp",
+    "git_blob_sha": "70a31ce182d8ab68d0ccd64c7c41ac6e2187ada2",
+    "url": "https://raw.githubusercontent.com/kkeenan02/diveRsity/22943bc95c80f46418578e7de205d4841976d140/src/pwHt.cpp",
+    "sha256": "8d6a4efaba8f26441528f7d8b7870fda6fbddd8aa3ce1c7c68c1fdfdf501e6ac"
+  },
+  {
+    "software": "diveRsity",
+    "repository": "kkeenan02/diveRsity",
+    "commit": "22943bc95c80f46418578e7de205d4841976d140",
+    "path": "src/myTab.cpp",
+    "git_blob_sha": "6005fa2f1004feaef5592c42c52d078799923949",
+    "url": "https://raw.githubusercontent.com/kkeenan02/diveRsity/22943bc95c80f46418578e7de205d4841976d140/src/myTab.cpp",
+    "sha256": "28bb5343a83b2d28384df8574c1070b73f9b56a739e27c3be5f7628ee9fc85c2"
+  }
+]

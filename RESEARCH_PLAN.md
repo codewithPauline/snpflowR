@@ -41,6 +41,12 @@ demographic interpretation. The initial pilot already exhibits this behavior.
 
 ### 2. Estimator and comparator audit
 
+Completed: a [pinned source comparison](validation/COMPARATOR_AUDIT.md) on
+110 arithmetic fixtures, with parser round trips, agreement in the ordinary
+domain, and preserved numerical/normalization differences at the boundaries.
+This covers point estimates only. Bootstrap procedures differ and require a
+separate study; no claim of full-package equivalence is made.
+
 - Reproduce paper examples where the supported input domain permits it.
 - Compare pinned `diveRsity::divMigrate` and `corridoR::directional_gst` versions
   on shared valid SNP fixtures and document every discrepancy.
@@ -121,8 +127,10 @@ review, or award. CRAN distribution and journal review are separate processes.
 | Packaging | Current R release/devel checks, Windows/macOS/Linux results, docs and examples |
 | Submission | Name/Archive/Bioconductor checks, maintainer details, license audit, CRAN policies rechecked |
 
-The initial implementation and pilots address parts of the first two gates and
-explore later ones. They do not satisfy the full release criteria.
+The initial implementation, pilots, and pinned point-estimator comparison address
+parts of the first three gates and explore later ones. Uncertainty calibration,
+empirical demonstration, and independent review remain open. They do not satisfy
+the full release criteria.
 
 ## Primary references and policy sources
 

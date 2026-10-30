@@ -106,6 +106,16 @@ The 50-replicate null results have wide Monte Carlo uncertainty (for example,
 nominal error control. This grid does not test unequal sizes or ghost populations;
 those remain priorities for the independent benchmark.
 
+## 4. Pinned comparator audit
+
+The [comparator report](COMPARATOR_AUDIT.md) documents 110 additional arithmetic
+fixtures run against unmodified, checksum-verified diveRsity and corridoR
+estimator sources. All 105 finite, nonsingular fixtures agree within 1e-12,
+as do two wholly undefined cases. Three other boundary cases expose normalization differences
+and numerical boundary behavior. All outputs and warnings are retained.
+These fixtures are not extra demographic simulations. Point-estimate agreement
+does not establish equivalence of bootstrap procedures or biological validity.
+
 ## Files and reproducibility
 
 `results/` contains all 1,100 replicate outcomes, summaries, seeds, scenario
@@ -114,8 +124,9 @@ intermediate coalescent count files and is excluded from git. Generation
 scripts never replace failures with a fresh random replicate. Benchmarks run
 outside `R CMD check`; ordinary examples and tests remain short and offline.
 
-The pilots do not demonstrate comparator equivalence, coverage for a declared
-genetic estimand, broad scaling, or empirical usefulness. They are the evidence
+The pilots and point-estimator audit do not demonstrate general comparator
+equivalence, coverage for a declared genetic estimand, broad scaling, or empirical
+usefulness. They are the evidence
 for the next research phase described in [RESEARCH_PLAN.md](../RESEARCH_PLAN.md).
 
 ## References

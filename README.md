@@ -3,6 +3,7 @@
 **Directional genetic signals from SNPs, with explicit uncertainty and failure diagnostics.**
 
 [![R-CMD-check](https://github.com/codewithPauline/snpflowR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/codewithPauline/snpflowR/actions/workflows/R-CMD-check.yaml)
+[![Comparator-audit](https://github.com/codewithPauline/snpflowR/actions/workflows/comparator-audit.yaml/badge.svg)](https://github.com/codewithPauline/snpflowR/actions/workflows/comparator-audit.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 
 **Status: research development (`0.0.0.9000`). Not a CRAN release or a validated
@@ -27,7 +28,7 @@ assessment of when its directional signals can and cannot be trusted.
 | Uncertainty | Paired locus or whole-block percentile bootstrap of the GST contrast |
 | Reporting | Explicit `unresolved` labels, exclusion counts, interval diagnostics, provenance |
 | QC | Minimum allele counts, optional pooled MAF filter, auditable retention decisions |
-| Validation | Independent arithmetic checks, invariance and parser tests, seeded simulations |
+| Validation | Independent arithmetic, pinned comparator sources, invariance and parser tests, seeded simulations |
 
 There is no Weir-Cockerham FST estimator, Jost's D estimator, demographic
 likelihood, genotype-likelihood input, haploid/polyploid parser, or fitted
@@ -125,18 +126,29 @@ unequal-sample replicates, 100/100 unequal-effective-size replicates, and
 development evidence, not universal performance rates. All raw outcomes are
 retained in [validation/results](validation/results).
 
+**The point-estimator comparison now covers 110 arithmetic fixtures** against
+pinned diveRsity and corridoR sources. The 105 finite, nonsingular fixtures
+agree to an absolute tolerance of 1e-12, and two wholly undefined cases also
+agree. Three boundary cases document deliberate normalization differences and
+numerical instability in one comparator; none were discarded. See the
+[complete comparator audit](validation/COMPARATOR_AUDIT.md). This checks
+computation, not biological reliability. divMigrate's individual bootstrap and
+snpflowR's locus/block contrast bootstrap are different procedures; their
+support labels are not interchangeable.
+
 ## Scientific and software development
 
 - [Methods and worked examples](vignettes/snpflowR.Rmd)
 - [Research questions, benchmark design, and release gates](RESEARCH_PLAN.md)
 - [Validation scripts, results, and limitations](validation/README.md)
+- [Pinned comparator results and boundary cases](validation/COMPARATOR_AUDIT.md)
 - [Developer instructions](DEVELOPMENT.md)
 - [Contributing](CONTRIBUTING.md)
 - [Report a bug](https://github.com/codewithPauline/snpflowR/issues)
 
-Publication will require comparisons with existing software, independently
-generated benchmarks, carefully sourced empirical data, and external scientific
-review. CRAN submission is a separate software-distribution review. Neither
+Publication will require broader uncertainty-method comparisons and calibration,
+expanded independent benchmarks, carefully sourced empirical data, and external
+scientific review. CRAN submission is a separate software-distribution review. Neither
 acceptance nor scientific novelty is claimed at this stage.
 
 ## Credit and citation
@@ -151,4 +163,5 @@ Directional genetic differentiation and relative migration.
 Related software includes
 [`diveRsity::divMigrate`](https://github.com/kkeenan02/diveRsity) and
 [`corridoR::directional_gst`](https://paulmaier.github.io/corridoR/reference/directional_gst.html).
-Equivalence outside the explicitly documented valid domain has not been established.
+Point-estimate agreement and documented exceptions are recorded in the comparator
+audit. General method equivalence or equivalent uncertainty estimates are not claimed.

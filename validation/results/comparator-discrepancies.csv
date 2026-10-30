@@ -1,0 +1,14 @@
+"fixture","software","from","to","gst","relative","gst_kind","relative_kind","gst_abs_difference","relative_abs_difference","gst_agrees","relative_agrees","n_no_shared"
+"identical_pair","diveRsity","A","C",0.0421637058161056,1,"finite","finite",1.31838984174237e-16,NA,TRUE,FALSE,0
+"identical_pair","diveRsity","B","C",0.0421637058161056,1,"finite","finite",1.31838984174237e-16,NA,TRUE,FALSE,0
+"identical_pair","diveRsity","C","A",0.0421637058161056,1,"finite","finite",1.45716771982052e-16,NA,TRUE,FALSE,0
+"identical_pair","diveRsity","C","B",0.0421637058161056,1,"finite","finite",1.45716771982052e-16,NA,TRUE,FALSE,0
+"identical_pair","corridoR","A","B",-2.73285667600039e-16,-161075923308540,"finite","finite",2.73285667600039e-16,NA,TRUE,FALSE,0
+"identical_pair","corridoR","A","C",0.0421637058161053,1,"finite","finite",1.11022302462516e-16,NA,TRUE,FALSE,0
+"identical_pair","corridoR","B","A",-2.73285667600039e-16,-161075923308540,"finite","finite",2.73285667600039e-16,NA,TRUE,FALSE,0
+"identical_pair","corridoR","B","C",0.0421637058161053,1,"finite","finite",1.11022302462516e-16,NA,TRUE,FALSE,0
+"identical_pair","corridoR","C","A",0.0421637058161053,1,"finite","finite",9.71445146547012e-17,NA,TRUE,FALSE,0
+"identical_pair","corridoR","C","B",0.0421637058161053,1,"finite","finite",9.71445146547012e-17,NA,TRUE,FALSE,0
+"fixed_source_zero_diversity","corridoR","A","B",-Inf,-0.576923076923077,"infinite","finite",NA,NA,FALSE,FALSE,0
+"identical_all","corridoR","A","B",-2.73285667600039e-16,1,"finite","finite",2.73285667600039e-16,NA,TRUE,FALSE,0
+"identical_all","corridoR","B","A",-2.73285667600039e-16,1,"finite","finite",2.73285667600039e-16,NA,TRUE,FALSE,0

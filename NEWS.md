@@ -8,3 +8,7 @@ Initial research development version. No stable release or CRAN submission.
 * Expose no-shared-allele exclusions and singular descriptive migration transforms.
 * Add paired locus/block contrast bootstrap, unresolved labels, and interval plots.
 * Add a seeded forward neutral simulator, automated tests, and research protocols.
+* Audit pinned diveRsity/corridoR point-estimator sources on 110 arithmetic
+  fixtures; preserve normalization differences and numerical boundary failures.
+* Add offline comparator reference tests and boundary regression tests, plus a
+  separate workflow for the checksum-verified external source comparison.

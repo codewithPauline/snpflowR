@@ -1,0 +1,6 @@
+"fixture","software","warning"
+"all_opposite_fixed","diveRsity","no non-missing arguments to max; returning -Inf"
+"all_opposite_fixed","corridoR","no non-missing arguments to max; returning -Inf"
+"all_shared_fixed","diveRsity","no non-missing arguments to max; returning -Inf"
+"all_shared_fixed","corridoR","no non-missing arguments to max; returning -Inf"
+"identical_all","diveRsity","no non-missing arguments to max; returning -Inf"
