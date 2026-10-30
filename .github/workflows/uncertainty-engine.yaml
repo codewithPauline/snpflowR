@@ -1,0 +1,36 @@
+name: Uncertainty-engine
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  research-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::Rcpp
+            any::jsonlite
+          needs: check
+      - run: R CMD INSTALL .
+      - name: Verify weighted resampling against literal duplication
+        run: Rscript validation/uncertainty/check_engine.R
+      - name: Smoke check every scenario using development seeds
+        run: |
+          Rscript validation/uncertainty/run_study.R smoke
+          Rscript validation/uncertainty/summarise.R smoke
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: uncertainty-engine-smoke
+          path: validation/generated/uncertainty-smoke/
+          if-no-files-found: error
