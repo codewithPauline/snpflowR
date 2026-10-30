@@ -1,0 +1,88 @@
+[
+  {
+    "id": 40981479706,
+    "name": "Comparator-audit",
+    "head_sha": "71c0c553f852e26cfacbc4b82686ba98a218a0fa",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/codewithPauline/snpflowR/actions/runs/40981479706",
+    "jobs": [
+      {
+        "id": 123822327159,
+        "name": "numeric-audit",
+        "status": "completed",
+        "conclusion": "success",
+        "evidence": [
+          "2026-10-30T00:45:23.1014749Z Verified 8 upstream source blobs.",
+          "2026-10-30T00:45:40.6920986Z   corridoR      110              648                 1                      9",
+          "2026-10-30T00:45:40.6921431Z  diveRsity      110              648                 0                      4",
+          "2026-10-30T00:45:40.6926563Z PASS: ordinary-domain agreement; boundary differences recorded separately."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40981479667,
+    "name": "R-CMD-check",
+    "head_sha": "71c0c553f852e26cfacbc4b82686ba98a218a0fa",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/codewithPauline/snpflowR/actions/runs/40981479667",
+    "jobs": [
+      {
+        "id": 123822326928,
+        "name": "windows-latest (R release)",
+        "status": "completed",
+        "conclusion": "success",
+        "evidence": [
+          "2026-10-30T00:45:02.9421435Z * using R version 4.6.1 (2026-06-24 ucrt)",
+          "2026-10-30T00:45:23.7256780Z Status: OK",
+          "2026-10-30T00:45:24.2484247Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+        ]
+      },
+      {
+        "id": 123822327190,
+        "name": "ubuntu-latest (R devel)",
+        "status": "completed",
+        "conclusion": "success",
+        "evidence": [
+          "2026-10-30T00:45:09.8434961Z Status: OK",
+          "2026-10-30T00:45:09.9958776Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+        ]
+      },
+      {
+        "id": 123822327206,
+        "name": "ubuntu-latest (R oldrel-1)",
+        "status": "completed",
+        "conclusion": "success",
+        "evidence": [
+          "2026-10-30T00:44:33.3336589Z * using R version 4.5.3 (2026-03-11)",
+          "2026-10-30T00:44:43.2156845Z Status: OK",
+          "2026-10-30T00:44:43.2886238Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+        ]
+      },
+      {
+        "id": 123822327275,
+        "name": "ubuntu-latest (R release)",
+        "status": "completed",
+        "conclusion": "success",
+        "evidence": [
+          "2026-10-30T00:45:34.6296050Z * using R version 4.6.2 (2026-10-29)",
+          "2026-10-30T00:45:51.1597761Z Status: OK",
+          "2026-10-30T00:45:51.2586570Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+        ]
+      },
+      {
+        "id": 123822327303,
+        "name": "macos-latest (R release)",
+        "status": "completed",
+        "conclusion": "success",
+        "evidence": [
+          "2026-10-30T00:45:14.1762280Z * using R version 4.6.1 (2026-06-24)",
+          "2026-10-30T00:45:30.1640670Z Status: OK",
+          "2026-10-30T00:45:30.3644960Z [ FAIL 0 | WARN 0 | SKIP 0 | PASS 146 ]"
+        ]
+      }
+    ]
+  }
+]
